@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-
+alert ('start');
 async function createTable() {
   // create a connection to the database
   const connection = await mysql.createConnection({
@@ -29,5 +29,8 @@ async function createTable() {
 }
 
 createTable().catch((error) => {
-  alert('error');
-});
+  console.error(error);
+}
+  alert('error, check console')
+);
+alert('finished');
