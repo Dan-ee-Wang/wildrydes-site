@@ -32,7 +32,5 @@ async function createTable() {
 
 createTable().catch((error) => {
   console.error(error);
-}
-  alert('error, check console');
-);
+});
 alert('finished');
